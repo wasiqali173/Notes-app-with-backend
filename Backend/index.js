@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://notes-app-with-backend-plgg.vercel.app', 
     credentials: true,               
   })
 );
