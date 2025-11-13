@@ -4,7 +4,11 @@ const logOutUser = (req, res) => {
 
         console.log("logout user=>",req.user);
 
-        res.clearCookie('token');
+        res.clearCookie("token",{
+            httpOnly: true,
+            secure: true,
+            sameSite: "none",
+        });
 
         res.status(200).json({ message: 'User logged out successfully' });
 
