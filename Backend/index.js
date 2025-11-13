@@ -1,5 +1,6 @@
 
 import 'dotenv/config';
+import express from 'express';
 import authRoutes from './routes/authRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import noteRoutes from './routes/noteRoutes.js';
@@ -36,5 +37,5 @@ app.get('/', (req, res) => {
 });
 
 
-export default app;  
+export default app;
 
